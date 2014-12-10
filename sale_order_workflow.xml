@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">	
+
+	<!-- envoie du devis création facture brouillon : uniquement so9,10
+	<workflow action="quotation_sent" model="sale.order" ref="sale_order_9"/>
+	<workflow action="quotation_sent" model="sale.order" ref="sale_order_10"/>-->
+
+
+	<!-- confirmation devis => bon de commande + création facture brouillon : 1a8 13a22-->
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_1"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_2"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_3"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_4"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_5"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_6"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_7"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_8"/>	
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_13"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_14"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_15"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_16"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_17"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_18"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_19"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_20"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_21"/>
+	<workflow action="order_confirm" model="sale.order" ref="sale_order_22"/>
+ 
+	<!-- création d'une référence pour la facture dans ir.model.data 1a8 14a22-->
+	<record model="ir.model.data" id="account_invoice_SOI001"><!--id dans specibike de ressource créée dans ir.model.data-->		
+		<field name="name">account_invoice_SOI001</field><!--id dans account-->	
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI001')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI002">		
+		<field name="name">account_invoice_SOI002</field>
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI002')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI003">		
+		<field name="name">account_invoice_SOI003</field>
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI003')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI004">		
+		<field name="name">account_invoice_SOI004</field>
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI004')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI005">		
+		<field name="name">account_invoice_SOI005</field>
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI005')]"/>
+        </record>
+
+	<record model="ir.model.data" id="account_invoice_SOI006">		
+		<field name="name">account_invoice_SOI006</field>	
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI006')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI007">
+		<field name="name">account_invoice_SOI007</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI007')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI008">
+		<field name="name">account_invoice_SOI008</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI008')]"/>
+        </record>
+
+	<record model="ir.model.data" id="account_invoice_SOI014">
+		<field name="name">account_invoice_SOI014</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI014')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI015">
+		<field name="name">account_invoice_SOI015</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI015')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI016">
+		<field name="name">account_invoice_SOI016</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI016')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI017">
+		<field name="name">account_invoice_SOI017</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI017')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI018">
+		<field name="name">account_invoice_SOI018</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI018')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI019">
+		<field name="name">account_invoice_SOI009</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI019')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI019">
+		<field name="name">account_invoice_SOI019</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI019')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI020">
+		<field name="name">account_invoice_SOI020</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI020')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI021">
+		<field name="name">account_invoice_SOI021</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI021')]"/>
+        </record>
+	<record model="ir.model.data" id="account_invoice_SOI022">
+		<field name="name">account_invoice_SOI022</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice</field>
+		<field name="res_id" model="account.invoice" search="[('reference', '=', 'SOI022')]"/>
+        </record>		
+
+	
+	
+	<!--
+	<record model="ir.model.data" id="account_invoice_SOI0061_line1">
+		<field name="name">account_invoice_SOI006_line1</field>		
+		<field name="module">account</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">account.invoice.line</field>
+		<field name="res_id" model="account.invoice.line" search="[('origin', '=', 'SOI006'),('name','=','[AGU133166] Cordo Compteur Cycle Cordo Ordinateur Velo Crd 4 Agu133166')]"/>
+	</record>
+	-->
+	<!--validation de la facture => facture validée mais pas payée so 1a8 14a22-->
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI001"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI002"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI003"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI004"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI005"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI006"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI007"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI008"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI014"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI015"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI016"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI017"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI018"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI019"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI020"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI021"/>
+	<workflow action="invoice_open" model="account.invoice" ref="account.account_invoice_SOI022"/>
+	
+	<!--paiement & reconciliation => facture payée écritures passées : so 1a8 16a22-->
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI001')]"/>
+		<value eval="896"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI001')"/>
+	</function>
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI002')]"/>
+		<value eval="2275.53"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI002')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI003')]"/>
+		<value eval="1110.5"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI003')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI004')]"/>
+		<value eval="1862.95"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI004')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI005')]"/>
+		<value eval="2281.85"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI005')"/>
+	</function>
+
+
+
+	
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI006')]"/>
+		<value eval="16.95"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI006')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI007')]"/>
+		<value eval="689.7"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI007')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI008')]"/>
+		<value eval="1917.1"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI008')"/>
+	</function>
+
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI016')]"/>
+		<value eval="1614"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI016')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI017')]"/>
+		<value eval="1636"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI017')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI018')]"/>
+		<value eval="994.98"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI018')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI019')]"/>
+		<value eval="2630.55"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI019')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI020')]"/>
+		<value eval="597"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI020')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI021')]"/>
+		<value eval="1063.89"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI021')"/>
+	</function>
+
+	<function model="account.invoice" name="pay_and_reconcile">
+		<value eval="[ref('account.account_invoice_SOI022')]"/>
+		<value eval="1299"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="ref('l10n_fr.pcg_78161')"/>
+			<value eval="ref('account.fiscalyear_1_period_'+time.strftime('%m'))"/>
+			<value eval="ref('account.bank_journal')"/>
+			<value eval="{}"/>
+		<value eval="str('Paiement SOI022')"/>
+	</function>
+
+
+
+
+
+	
+
+
+</data>
+</openerp>
+

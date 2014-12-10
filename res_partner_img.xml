@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">
+
+	<!--photo partner & user : main + 3to12 -->
+	<record id="base.partner_root" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/main_partner-image.jpg"/>
+        </record>
+
+	<record id="res_partner_3" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_3-image.png"/>
+        </record>
+
+	<record id="res_partner_4" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_4-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_5" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_5-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_6" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_6-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_7" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_7-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_8" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_8-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_9" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_9-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_10" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_10-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_11" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_11-image.png"/>
+        </record>   	
+   
+    
+   	<record id="res_partner_12" model="res.partner">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_12-image.png"/>
+        </record>
+	
+
+</data>
+</openerp>

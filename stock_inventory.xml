@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">	
+	<!-- inventaires-->
+	<record id="stock_inventory_1" model="stock.inventory">
+            	<field name="name">Stocks initiaux Specibike</field>
+		<field name="location_id" ref="stock.stock_location_stock" />
+		<field name="date" eval="time.strftime('%Y')+'-01-01 08:00'" />
+        </record>
+	<record id="stock_inventory_2" model="stock.inventory">
+            	<field name="name">Stocks initiaux Specibike Paris</field>
+		<field name="location_id" ref="stock.stock_location_specibike_paris" />
+		<field name="date" eval="time.strftime('%Y')+'-01-01 08:00'" />
+        </record>
+
+ </data>
+</openerp>
+

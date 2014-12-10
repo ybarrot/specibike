@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">
+	<!--      charger automatiquement le français  -->      
+       
+	<record model="base.language.install" id="install_fr">
+		<field name="lang">fr_FR</field>
+		<field name="state">done</field>
+		<field name="overwrite" eval="1"/>
+    	</record>
+    	<function
+		model="base.language.install"
+		name="lang_install"
+        	eval="[[ref('install_fr')]]"/>
+	
+	<record model="ir.model.data" id="lang_fr">
+		<field name="name">lang_fr</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">base</field>
+		<field name="model">res.lang</field>
+		<field name="res_id" model="res.lang" search="[('code', '=', 'fr_FR')]"/>		
+        </record>
+
+	
+	<!--validation automatique des écritures dans les journaux : bank - cash - stock - sales-->
+	<record model="ir.model.data" id="bank_journal">
+		<field name="name">bank_journal</field>
+		<field name="noupdate" eval="1" />
+		<field name="module">account</field>
+		<field name="model">account.journal</field>
+		<field name="res_id" model="account.journal" search="[('code', '=', 'BNK2')]"/>
+	</record>
+	<record id="account.bank_journal" model="account.journal">		   
+		<field name="entry_posted" eval="1" />
+	</record>
+	<record model="ir.model.data" id="cash_journal">
+		<field name="name">cash_journal</field>
+		<field name="noupdate" eval="1" />
+		<field name="module">account</field>
+		<field name="model">account.journal</field>
+		<field name="res_id" model="account.journal" search="[('code', '=', 'BNK1')]"/>
+	</record>
+	<record id="account.cash_journal" model="account.journal">		   
+		<field name="entry_posted" eval="1" />
+	</record>
+	
+	
+	<record model="ir.model.data" id="sales_journal">
+		<field name="name">sales_journal</field>
+		<field name="noupdate" eval="1" />
+		<field name="module">account</field>
+		<field name="model">account.journal</field>
+		<field name="res_id" model="account.journal" search="[('code', '=', 'SAJ')]"/>
+	</record>
+
+	
+	<record model="ir.model.data" id="stock_journal">
+		<field name="name">stock_journal</field>
+		<field name="noupdate" eval="1" />
+		<field name="module">account</field>
+		<field name="model">account.journal</field>
+		<field name="res_id" model="account.journal" search="[('code', '=', 'STJ')]"/>
+	</record>
+	<record id="account.stock_journal" model="account.journal">		   
+		<field name="entry_posted" eval="1" />
+	</record>
+	
+	<!-- création de références dans ir.model.data DATE-->	
+	<!--        Fiscal year et periodes      -->
+	<!-- TODO remplacer eval='X' par expression - suppose que le module est installé avant modif des périodes-->
+
+	<record model="ir.model.data" id="fiscalyear_1">
+		<field name="name">fiscalyear_1</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.fiscalyear</field>		
+		<field name="res_id" model="account.fiscalyear" eval="1"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_ouv">
+		<field name="name">fiscalyear_1_period_ouv</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="1"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_1">
+		<field name="name">fiscalyear_1_period_1</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="2"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_2">
+		<field name="name">fiscalyear_1_period_2</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="3"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_3">
+		<field name="name">fiscalyear_1_period_3</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="4"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_4">
+		<field name="name">fiscalyear_1_period_4</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="5"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_5">
+		<field name="name">fiscalyear_1_period_5</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="6"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_6">
+		<field name="name">fiscalyear_1_period_6</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="7"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_7">
+		<field name="name">fiscalyear_1_period_7</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="8"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_8">
+		<field name="name">fiscalyear_1_period_8</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="9"/>
+        </record>
+
+	<record model="ir.model.data" id="fiscalyear_1_period_9">
+		<field name="name">fiscalyear_1_period_9</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="10"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_10">
+		<field name="name">fiscalyear_1_period_10</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="11"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_11">
+		<field name="name">fiscalyear_1_period_11</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="12"/>
+        </record>
+	<record model="ir.model.data" id="fiscalyear_1_period_12">
+		<field name="name">fiscalyear_1_period_12</field>
+		<field name="noupdate">TRUE</field>
+		<field name="module">account</field>
+		<field name="model">account.period</field>
+		<field name="res_id" model="account.period" eval="13"/>
+        </record>
+	    
+	
+	<!-- activer inventaire permanent -->
+        <record model="stock.config.settings" id="set_stock_accounting">	
+		<field name="group_stock_inventory_valuation" eval="1"/>
+        </record>
+        <function model="stock.config.settings" name="execute">
+           	<value eval="[[ref('set_stock_accounting')]]"/>            
+        </function>
+	
+	<!-- Activate Technical Features for Admin -->
+	<record id="base.user_root" model="res.users">
+		<field name="groups_id" eval="[(4, ref('base.group_no_one'))]"/>
+	</record>
+	
+	<!--paramètres de la compagnie-->
+
+	<record id="base.main_company" model="res.company">
+            <field name="name">Specibike</field>
+            <field name="partner_id" ref="base.main_partner"/>
+            <field name="rml_header1">Le spécialiste du vélo</field>
+            <field name="currency_id" ref="base.EUR"/>
+        </record>	
+	<record id="base.main_partner" model="res.partner">
+		<field name="name">Specibike</field>
+		<field name="company_id" eval="ref('base.main_company')"/>
+		<field name="image" eval="False"/>
+		<field name="customer" eval="False"/>
+		<field name="is_company" eval="True"/>
+		<field name="street"></field>
+		<field name="city"></field>
+		<field name="zip"></field>
+		<field name="phone"></field>
+		<field name="email">info@specibike.com</field>
+		<field name="website">www.specibike.com</field>
+		<field name="image" type="base64" file="specibike/static/img/partner/logo2.png"/>
+        </record>
+
+	<!-- paramètres des sites-->
+	<!-- Activer le support du français-->
+	<record model="website.config.settings" id="set_website_languages">	
+		<field name="language_ids" eval="[(6, 0, [ ref('base.lang_en'),ref('base.lang_fr')])]"/>
+        </record>
+        <function model="website.config.settings" name="execute">
+           	<value eval="[[ref('set_website_languages')]]"/>            
+        </function>
+	<!-- Français par défaut-->
+	<record model="website.config.settings" id="set_website_default_language">	
+		<field name="default_lang_id" eval="ref('base.lang_fr')"/>
+        </record>
+        <function model="website.config.settings" name="execute">
+           	<value eval="[[ref('set_website_default_language')]]"/>            
+        </function>	
+
+  </data>
+
+	
+</openerp>
+
+

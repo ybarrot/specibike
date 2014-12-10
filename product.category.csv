@@ -1,0 +1,9 @@
+"id","name","parent_id/id","property_stock_journal/id","property_stock_account_input_categ","property_stock_account_output_categ","property_stock_valuation_account_id"
+"product.product_category_all","Tous les articles",,"stock_account.stock_journal",,,
+"product_category_2","Vélos","product.product_category_all","stock_account.stock_journal",607100,603700,371000
+"product_category_3","GTC","product_category_2","stock_account.stock_journal",607100,603700,371000
+"product_category_4","Accessoires","product.product_category_all","stock_account.stock_journal",607100,603700,371000
+"product_category_5","Transport","product.product_category_all","stock_account.stock_journal",607100,603700,371000
+"product_category_6","Ville","product_category_2","stock_account.stock_journal",607100,603700,371000
+"product_category_7","VTT","product_category_2","stock_account.stock_journal",607100,603700,371000
+"product_category_8","VTC","product_category_2","stock_account.stock_journal",607100,603700,371000

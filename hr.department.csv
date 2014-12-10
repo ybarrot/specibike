@@ -1,0 +1,19 @@
+"id","name","parent_id/id"
+"hr_employee_department_1","Management",
+"hr_employee_department_2","Direction des systèmes d'information (DSI)","hr_employee_department_1"
+"hr_employee_department_3","Direction des ressources humaines (DRH)","hr_employee_department_1"
+"hr_employee_department_4","Service technique",
+"hr_employee_department_5","Direction des affaires financière (DAF)","hr_employee_department_1"
+"hr_employee_department_6","Direction commerciale","hr_employee_department_1"
+"hr_employee_department_7","Service web","hr_employee_department_2"
+"hr_employee_department_8","Gestion des communautés","hr_employee_department_2"
+"hr_employee_department_9","Service comptabilité","hr_employee_department_5"
+"hr_employee_department_10","Service contentieux","hr_employee_department_5"
+"hr_employee_department_11","Achats","hr_employee_department_4"
+"hr_employee_department_12","Préparation","hr_employee_department_4"
+"hr_employee_department_13","Recrutement","hr_employee_department_3"
+"hr_employee_department_14","Formation","hr_employee_department_3"
+"hr_employee_department_15","Catalogue","hr_employee_department_6"
+"hr_employee_department_16","Ventes web","hr_employee_department_6"
+"hr_employee_department_17","SAV","hr_employee_department_4"
+

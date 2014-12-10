@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">	
+
+	<!--renommer l'entrepôt principal-->
+	 <record model="stock.warehouse" id="stock.warehouse0">
+		<field name="name">Specibike</field>
+		<field name="code">WH</field>		
+        </record>
+	
+	<!-- warehouse & location specibike paris-->	
+	<record id="stock.stock_warehouse_sp" model="stock.warehouse">
+            	<field name="name">Specibike Paris</field>
+		<field name="code">SP</field>			
+        </record>
+
+	<record model="ir.model.data" id="stock_location_specibike_paris">
+		<field name="name">stock_location_specibike_paris</field>
+		<field name="noupdate" eval="1"/>
+		<field name="module">stock</field>
+		<field name="model">stock.location</field>
+		<field name="res_id" model="stock.location" search="[('complete_name', '=', 'Physical Locations / SP / Stock')]"/>		
+        </record>
+
+	<!--TODO identifiant => alternative :
+		<record model="ir.model.data" id="stock_location_sp_test">
+			<field name="name">stock_location_sp_test</field>
+			<field name="noupdate" eval="1"/>
+			<field name="module">stock</field>
+			<field name="model">stock.location</field>
+			<field name="res_id" model="stock.location" search="[('name', '=', 'SP')]"/>
+        	</record>	
+		<record model="ir.model.data" id="stock_location_specibike_test">
+			<field name="name">stock_location_specibike_test</field>
+			<field name="noupdate" eval="1"/>
+			<field name="module">stock</field>
+			<field name="model">stock.location</field>
+			<field name="res_id" model="stock.location" search="[('location_id','=',ref('stock.stock_location_sp_test')),('name','=','Stock')]"/>		
+		</record
+		!!ref ne passe pas dans le search
+		piste ?
+		<getitem index="0" type="list"> 
+			<function model="stock.location" name="search" eval="[[('location_id','=',ref('stock.stock_location_sp_test'))]]"/>
+		</getitem>
+		
+	-->
+
+
+  </data>
+</openerp>
+

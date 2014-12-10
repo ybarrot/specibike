@@ -1,0 +1,11 @@
+"id","name","user_id/id","department_id/id","category_ids/id","parent_id/id"
+"hr_employee_2","Burgond","res_users_4","hr_employee_department_1","hr_employee_category_10",
+"hr_employee_3","Khatib","res_users_6","hr_employee_department_1","hr_employee_category_7","hr_employee_2"
+"hr_employee_4","Billon","res_users_3","hr_employee_department_1","hr_employee_category_7","hr_employee_2"
+"hr_employee_5","Fulton","res_users_5","hr_employee_department_6","hr_employee_category_5","hr_employee_4"
+"hr_employee_6","Coulmy","res_users_7","hr_employee_department_5","hr_employee_category_8","hr_employee_3"
+"hr_employee_7","Rivaux","res_users_9","hr_employee_department_1","hr_employee_category_7","hr_employee_2"
+"hr_employee_8","Metz","res_users_8","hr_employee_department_1","hr_employee_category_7","hr_employee_2"
+"hr_employee_9","Gross","res_users_10","hr_employee_department_2","hr_employee_category_7","hr_employee_7"
+"hr_employee_10","Schindler","res_users_12","hr_employee_department_4","hr_employee_category_7","hr_employee_2"
+"hr_employee_11","Albrecht","res_users_11","hr_employee_department_1","hr_employee_category_7","hr_employee_2"

@@ -1,0 +1,12 @@
+"id","name","parent_id/id"
+"hr_employee_category_1","Cadre",
+"hr_employee_category_2","Cadre supérieur",
+"hr_employee_category_3","Ingénieur","hr_employee_category_1"
+"hr_employee_category_4","Employés",
+"hr_employee_category_5","Vendeur","hr_employee_category_4"
+"hr_employee_category_6","Ingénieur commercial","hr_employee_category_1"
+"hr_employee_category_7","Chef de service","hr_employee_category_2"
+"hr_employee_category_8","Technicien","hr_employee_category_4"
+"hr_employee_category_9","Opérateur web","hr_employee_category_8"
+"hr_employee_category_10","Directeur","hr_employee_category_7"
+

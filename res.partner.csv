@@ -1,0 +1,55 @@
+"id","name","ref","email","street","zip","city","country_id/id","title/id","parent_id/id","company_id/id","customer"
+"res_partner_11","Albrecht","u11","albrecht@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_3","Billon","u3","billon@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_4","Burgond","u4","burgong@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_7","Coulmy","u7","coulmy@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_5","Fulton","u5","fulton@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_10","Gross","u10","gross@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_6","Khatib","u6","khatib@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_8","Metz","u8","metz@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_9","Rivaux","u9","rivaux@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_12","Schindler","u12","schindler@specibike.fr",,,,"base.fr",,"base.main_company","base.main_company",0
+"res_partner_22","Bernard Laporte","cl02","bLaporte@free.fr","2 rue de Gaulle",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_23","Marie Desgin","cl03","mDesgin@wanadoo.fr","14 rue du Bac",75000,"Paris","base.fr","base.res_partner_title_madam",,,1
+"res_partner_24","Pierre Legall","cl03","pLegall@sfr.fr","15 rue du gres du loup",44000,"NANTES","base.fr","base.res_partner_title_mister",,,1
+"res_partner_25","Jean Terre","cl04","jTerre@free.fr","10 rue de Conty",13000,"MARSEILLES","base.fr","base.res_partner_title_mister",,,1
+"res_partner_26","Bill Porte","cl05","bPorte@free.fr","15 rue de Riviere",69000,"LYON","base.fr","base.res_partner_title_mister",,,1
+"res_partner_27","Maelle Torrent","cl06","mTorrent@free.fr","10 boulevard de la Liberte",67000,"STRASBOURG","base.fr","base.res_partner_title_madam",,,1
+"res_partner_28","Gerard Dax","cl07","gDax@free.fr","18 rue du Beau",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_29","Serge Bertrand","cl08","sBertrand@wanadoo.fr","27 rue des Eglantiers",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_30","Laurent Cret","cl10","lCret@neuf.fr","18 rue de la fabrique",13100,"AIX EN PROVENCE","base.fr","base.res_partner_title_mister",,,1
+"res_partner_31","Valerie Egoc","cl11","vEgoc@free.fr","2 rue de Gaulle",35000,"RENNES","base.fr","base.res_partner_title_madam",,,1
+"res_partner_32","Guillaume Delmar","cl12","gDelmar@numericable.fr","85 boulevard des ruines",29200,"BREST","base.fr","base.res_partner_title_mister",,,1
+"res_partner_33","Catherine Soliste","cl13","cSoliste@free.fr","110 rue des concerts",92700,"COLOMBES","base.fr","base.res_partner_title_madam",,,1
+"res_partner_34","Xavier Martin","cl14","xMartin@neuf.fr","130 boulevard des Belges",92160,"ANTHONY","base.fr","base.res_partner_title_mister",,,1
+"res_partner_35","Bruno Suder","cl15","bSuder@alice.fr","18 rue du petit caporal",76000,"ROUEN","base.fr","base.res_partner_title_mister",,,1
+"res_partner_36","Bernard Laferriere","cl16","bLaferriere@free.fr","2 rue de Metz",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_37","Marie Desginer","cl17","mDesginer@wanadoo.fr","14 rue du Baccalaureat",75000,"Paris","base.fr","base.res_partner_title_madam",,,1
+"res_partner_38","Pierrot Legallois","cl18","pLegallois@sfr.fr","15 rue du gres de marbre",44000,"NANTES","base.fr","base.res_partner_title_mister",,,1
+"res_partner_39","Jean Terre","cl19","jTerre@free.fr","10 rue de Conty",13000,"MARSEILLES","base.fr","base.res_partner_title_mister",,,1
+"res_partner_40","William Porter","cl20","wPorter@free.fr","15 rue de Riviere Sans Retour",69000,"LYON","base.fr","base.res_partner_title_mister",,,1
+"res_partner_41","Maelle Tirrante","cl21","mTirrantent@free.fr","10 boulevard de la Strasbourg",67000,"STRASBOURG","base.fr","base.res_partner_title_madam",,,1
+"res_partner_42","Gerard Daxos","cl22","gDaxos@free.fr","18 rue du Beau temps",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_43","Sergio Dertrand","cl23","sDertrand@wanadoo.fr","27 rue des Groseillers",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_44","Laurent Cretois","cl24","lCretois@neuf.fr","18 rue de l'usine",13100,"AIX EN PROVENCE","base.fr","base.res_partner_title_mister",,,1
+"res_partner_45","Valerie Egocent","cl25","vEgocent@free.fr","2 rue de la reine",35000,"RENNES","base.fr","base.res_partner_title_madam",,,1
+"res_partner_46","Guillaume Zorro","cl26","gZorro@numericable.fr","85 boulevard de la fortune",29200,"BREST","base.fr","base.res_partner_title_mister",,,1
+"res_partner_47","Catherine Nombril","cl27","cNombril@free.fr","110 rue des expositions",92700,"COLOMBES","base.fr","base.res_partner_title_madam",,,1
+"res_partner_48","Xavier Dupont","cl28","xDupont@neuf.fr","130 boulevard des Hollandais",92160,"ANTHONY","base.fr","base.res_partner_title_mister",,,1
+"res_partner_49","Bruno Sudouser","cl29","bSudouser@alice.fr","18 rue de la mer",76000,"ROUEN","base.fr","base.res_partner_title_mister",,,1
+"res_partner_50","Bertrand Laporte","cl30","bLaporte@neuf.fr","2 rue du Vignoble",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_51","Maria Desgin","cl31","mDesgin@wanadoo.fr","14 rue du Parc",75000,"Paris","base.fr","base.res_partner_title_madam",,,1
+"res_partner_52","Anne Tintin","cl32","aTintin@sfr.fr","15 rue de le Muette",44000,"NANTES","base.fr","base.res_partner_title_madam",,,1
+"res_partner_53","Alain Sauveur","cl33","aSauveur@free.fr","10 rue du Chef",13000,"MARSEILLES","base.fr","base.res_partner_title_mister",,,1
+"res_partner_54","Eric Desdag","cl34","eDesdag@free.fr","15 rue de Riviere",69000,"LYON","base.fr","base.res_partner_title_mister",,,1
+"res_partner_55","Rozenn Dagdes","cl35","rDagdes@free.fr","10 boulevard de la Liberte",67000,"STRASBOURG","base.fr","base.res_partner_title_madam",,,1
+"res_partner_56","Denis Broc","cl36","dBroc@free.fr","18 rue du Tee Shirt",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_57","Guy Barbu","cl37","gBarbu@wanadoo.fr","27 rue des mensonges",67000,"STRASBOURG","base.fr","base.res_partner_title_mister",,,1
+"res_partner_58","Anne Grasouille","cl38","aGrasouille@neuf.fr","18 rue de la betise",13100,"AIX EN PROVENCE","base.fr","base.res_partner_title_madam",,,1
+"res_partner_59","Rena Meyer","cl39","rMeyer@free.fr","2 rue de la naturopathe",35000,"RENNES","base.fr","base.res_partner_title_madam",,,1
+"res_partner_60","Paola Norde","cl40","pNorde@numericable.fr","85 boulevard dell amorata",29200,"BREST","base.fr","base.res_partner_title_madam",,,1
+"res_partner_61","Pascal Bertran","cl41","pBertran@free.fr","110 rue du combat",92700,"COLOMBES","base.fr","base.res_partner_title_mister",,,1
+"res_partner_62","Laurence Arano","cl42","lArano@neuf.fr","130 boulevard des aveugles",92160,"ANTHONY","base.fr","base.res_partner_title_madam",,,1
+"res_partner_63","Christine Harpie","cl43","cHarpie@alice.fr","18 rue de la naivete",76000,"ROUEN","base.fr","base.res_partner_title_madam",,,1
+"res_partner_64","La Poste","fr01","delgado@laposte.fr","15 rue de la poste",13002,"Marseille","base.fr","base.res_partner_title_madam",,,1
+"res_partner_65","SpecibikeParis",,,"10 boulevard de Gaulle",75000,"Paris","base.fr","base.res_partner_title_mister",,,1

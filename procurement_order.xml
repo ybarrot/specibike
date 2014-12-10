@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">
+
+<!--livraison de toutes les commandes payées : so 1a8 16a22-->
+<record model="ir.model.data" id="stock_picking_SOI001">
+		<field name="name">stock_picking_SOI001</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI001')]"/>
+	</record>
+	
+	<!--vérifier la disponibilité-->
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI001')]"/></function>
+	
+	<!--valider le mouvement - ouvrir formulaire de validation-->
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI001')]"/></function>
+
+	<!--valider le mouvement - terminer-->
+	<record model="stock.transfer_details" id="transf_details_SOI001">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI001')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI001')]]"/>    	
+
+<record model="ir.model.data" id="stock_picking_SOI002">
+		<field name="name">stock_picking_SOI002</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI002')]"/>
+	</record>
+	<function model="stock.picking" name="action_assign">
+		<value eval="[ref('stock.stock_picking_SOI002')]"/>
+        </function>	
+	<function model="stock.picking" name="do_enter_transfer_details">
+		<value eval="[ref('stock.stock_picking_SOI002')]"/>
+        </function>	
+	<record model="stock.transfer_details" id="transf_details_SOI002">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI002')"/>
+   	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+        	eval="[[ref('transf_details_SOI002')]]"/>	
+   
+       	
+ <record model="ir.model.data" id="stock_picking_SOI003">
+		<field name="name">stock_picking_SOI003</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI003')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI003')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI003')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI003">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI003')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI003')]]"/>
+    
+       	
+ <record model="ir.model.data" id="stock_picking_SOI004">
+		<field name="name">stock_picking_SOI004</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI004')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI004')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI004')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI004">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI004')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI004')]]"/>
+    
+       	
+ <record model="ir.model.data" id="stock_picking_SOI005">
+		<field name="name">stock_picking_SOI005</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI005')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI005')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI005')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI005">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI005')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI005')]]"/>
+    
+<!--Référence des bons de livraisons créés automatiquement-->	
+<record model="ir.model.data" id="stock_picking_SOI006">
+		<field name="name">stock_picking_SOI006</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI006')]"/>
+	</record>
+	
+	<!--vérifier la disponibilité-->
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI006')]"/></function>
+	
+	<!--valider le mouvement - ouvrir formulaire de validation-->
+		<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI006')]"/></function>
+	
+		<!--valider le mouvement - terminer-->
+		<record model="stock.transfer_details" id="transf_details_SOI006">
+			<field name="picking_id" eval="ref('stock.stock_picking_SOI006')"/>
+	    	</record>
+		<function
+			model="stock.transfer_details"
+			name="do_detailed_transfer"
+			eval="[[ref('transf_details_SOI006')]]"/>
+       	
+   
+       	
+ <record model="ir.model.data" id="stock_picking_SOI007">
+		<field name="name">stock_picking_SOI007</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI007')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI007')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI007')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI007">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI007')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI007')]]"/>
+    
+       	
+ <record model="ir.model.data" id="stock_picking_SOI008">
+		<field name="name">stock_picking_SOI008</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI008')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI008')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI008')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI008">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI008')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI008')]]"/>
+
+<record model="ir.model.data" id="stock_picking_SOI016">
+		<field name="name">stock_picking_SOI016</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI016')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI016')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI016')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI016">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI016')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI016')]]"/>
+    
+       	
+<record model="ir.model.data" id="stock_picking_SOI017">
+		<field name="name">stock_picking_SOI017</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI017')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI017')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI017')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI017">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI017')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI017')]]"/>
+    
+       	
+<record model="ir.model.data" id="stock_picking_SOI018">
+		<field name="name">stock_picking_SOI018</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI018')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI018')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI018')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI018">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI018')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI018')]]"/>
+    
+       	
+<record model="ir.model.data" id="stock_picking_SOI019">
+		<field name="name">stock_picking_SOI019</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI019')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI019')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI019')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI019">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI019')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI019')]]"/>
+    
+       	
+<record model="ir.model.data" id="stock_picking_SOI020">
+		<field name="name">stock_picking_SOI020</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI020')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI020')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI020')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI020">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI020')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI020')]]"/>
+    
+       	
+<record model="ir.model.data" id="stock_picking_SOI021">
+		<field name="name">stock_picking_SOI021</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI021')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI021')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI021')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI021">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI021')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI021')]]"/>
+    
+       	
+<record model="ir.model.data" id="stock_picking_SOI022">
+		<field name="name">stock_picking_SOI022</field>		
+		<field name="module">stock</field>
+		<field name="noupdate" eval="True"/>
+		<field name="model">stock.picking</field>
+		<field name="res_id" model="stock.picking" search="[('origin', '=', 'SOI022')]"/>
+	</record>         	
+	<function model="stock.picking" name="action_assign"><value eval="[ref('stock.stock_picking_SOI022')]"/></function>
+	<function model="stock.picking" name="do_enter_transfer_details"><value eval="[ref('stock.stock_picking_SOI022')]"/></function>
+	<record model="stock.transfer_details" id="transf_details_SOI022">
+		<field name="picking_id" eval="ref('stock.stock_picking_SOI022')"/>
+    	</record>
+	<function
+		model="stock.transfer_details"
+		name="do_detailed_transfer"
+		eval="[[ref('transf_details_SOI022')]]"/>
+
+</data>
+	
+</openerp>
+
+

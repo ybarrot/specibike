@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">
+	<!--
+	<record id="website.default_website" model="website">
+            <field name="name">www.specibike.fr</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="language_ids" eval="[(6, 0, [ ref('base.lang_en'),ref('base.lang_fr')])]"/>
+            <field name="default_lang_id" ref="base.lang_fr"/>
+            <field name="user_id" ref="base.public_user"/>
+	    <field name="social_twitter">https://twitter.com/odooapps</field>
+            <field name="social_facebook">https://www.facebook.com/Odoo</field>
+            <field name="social_googleplus">https://plus.google.com/+Odooapps</field>
+            <field name="social_linkedin">http://www.linkedin.com/company/odoo</field>
+        </record>
+	-->
+
+
+
+	<!--menus-->
+	<delete id="website.menu_homepage" model="website.menu"/>
+	
+	<record id="website_sale.menu_shop" model="website.menu">
+            <field name="name">Shop</field>
+            <field name="url">/shop</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">5</field>
+        </record>
+
+	<record id="menu_database" model="website.menu">
+            <field name="name">Database</field>
+            <field name="url">/web/database/manager</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">70</field>
+        </record>
+	<record id="menu_manage_database" model="website.menu">
+            <field name="name">Manage Database</field>
+            <field name="url">/web/database/manager</field>
+            <field name="parent_id" ref="menu_database"/>
+            <field name="sequence" type="int">75</field>
+        </record>	
+	<record id="menu_select_database" model="website.menu">
+            <field name="name">Select Database</field>
+            <field name="url">/web/database/selector</field>
+            <field name="parent_id" ref="menu_database"/>
+            <field name="sequence" type="int">80</field>
+        </record>
+
+	
+	<!--
+        <record id="website.menu_contactus" model="website.menu">
+            <field name="name">Contact us</field>
+            <field name="url">/page/website.contactus</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">60</field>
+        </record>
+	-->
+	
+	<!--TODO ACTIVER A LA FIN redirection vers page accueil du site sans tuto après installation module
+	<record id="action_website_notutorial" model="ir.actions.act_url">
+            <field name="name">Website With No Tutorial</field>
+            <field name="url">/</field>
+            <field name="target">self</field>
+        </record>
+	<record id="base.open_menu" model="ir.actions.todo">
+            <field name="action_id" ref="action_website_notutorial"/>
+            <field name="state">open</field>
+        </record>-->
+
+	<!--rediriger vers /shop à partir du menu principal pgi INUTILE SI SHOP a sequence MIN
+	<record id="website.action_website" model="ir.actions.act_url">
+            <field name="name">Website</field>
+            <field name="url">/shop</field>
+            <field name="target">self</field>
+        </record>-->
+	
+	<!--détails des produits
+	<record id="product.product_product_consultant" model="product.product">
+            <field name="website_published" eval="False"/>
+        </record>
+	
+	 <record id="product_product_237" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_237-image.png"/>
+		<field name="website_size_x">2</field>
+		<field name="website_size_y">2</field>
+		<field name="website_sequence">150</field>
+
+        </record>
+	 <record id="product_product_240" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_240-image.png"/>
+		<field name="website_size_x">2</field>		
+		<field name="website_sequence">149</field>
+        </record>
+
+-->
+	
+	<!--template pour le bas de la page-->
+	
+	<template id="website.footer_default" inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+	    <xpath expr="//div[@id='footer']" position="replace">
+		<div class="container hidden-print">
+		    <div class="row">
+		        <div class="col-md-3">
+		            <h4>Our products &amp; Services</h4>
+		            <ul class="list-unstyled" id="products">
+		                <li><a href="/">Home</a></li>
+		            </ul>
+		        </div>
+		        <div class="col-md-3" id="info">
+		            <h4>Connect with us</h4>
+		            <ul class="list-unstyled">
+		                <li><a href="/page/website.contactus">Contact us</a></li>
+		            </ul>
+		            <ul class="list-unstyled">
+		                <li t-ignore="true"><i class="fa fa-phone"></i> <span t-field="res_company.phone"></span></li>
+		                <li t-ignore="true"><i class="fa fa-envelope"></i>  <span t-field="res_company.email"></span></li>
+		            </ul>
+		            <h2>
+		                <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+		                <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+		                <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+		                <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+		                <a t-att-href="website.social_googleplus" t-if="website.social_googleplus"><i class="fa fa-google-plus-square"/></a>
+		                <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+		            </h2>
+		        </div>
+		        <div class="col-md-5 col-lg-offset-1">
+		            <div>
+		                <h4>
+		                    <span t-field="res_company.name" />
+		                    <small> - <a href="/page/website.aboutus">About us</a></small>
+		                </h4>
+		                <p>
+		                    Nous sommes une équipe de personnes passionnées dont le but et d'améliorer la vie de chacun et de tous à travers le vélo.
+		                </p>
+		               
+		            </div>
+		            <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+		                <li t-foreach="languages" t-as="lg">
+		                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
+		                     t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None">
+		                     <t t-esc="lg[1].split('/').pop()"/></a>
+		                </li>
+		                <li groups="base.group_website_publisher">
+		                    <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+		                    <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+		                    <i class="fa fa-plus-circle"/>
+		                    Add a language...
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+	    </xpath>
+	</template>
+
+
+</data>
+</openerp>

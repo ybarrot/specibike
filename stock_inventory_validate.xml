@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">     
+        <function model="stock.inventory" name="action_done">
+            <function eval="[[('id', '=', ref('stock_inventory_1'))]]" model="stock.inventory" name="search"/>
+        </function>
+	<function model="stock.inventory" name="action_done">
+            <function eval="[[('id', '=', ref('stock_inventory_2'))]]" model="stock.inventory" name="search"/>
+        </function>
+  </data>
+</openerp>
+
+

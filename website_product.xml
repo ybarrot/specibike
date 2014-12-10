@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp> 
+  <data noupdate="1">
+	
+
+	<!--détails des produits-->
+	<record id="product.product_product_consultant" model="product.product">
+            <field name="website_published" eval="False"/>
+        </record>
+	
+	<!--produits mis en avant-->
+	 <record id="product_product_237" model="product.product">
+		<field name="website_size_x">2</field>
+		<field name="website_size_y">2</field>
+		<field name="website_sequence">150</field>
+        </record>
+	 <record id="product_product_240" model="product.product">
+		<field name="website_size_x">2</field>		
+		<field name="website_sequence">149</field>
+        </record>
+	
+	<!--image des produits-->
+	<record id="product_product_1" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_1-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_2" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_2-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_4" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_4-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_5" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_5-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_10" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_10-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_16" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_16-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_19" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_19-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_20" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_20-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_21" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_21-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_23" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_23-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_34" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_34-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_41" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_41-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_50" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_50-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_53" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_53-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_57" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_57-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_62" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_62-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_63" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_63-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_67" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_67-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_94" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_94-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_105" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_105-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_107" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_107-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_110" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_110-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_153" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_153-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_156" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_156-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_157" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_157-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_159" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_159-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_163" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_163-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_164" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_164-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_170" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_170-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_173" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_173-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_176" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_176-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_201" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_201-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_212" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_212-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_237" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_237-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_240" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_240-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_250" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_250-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_255" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_255-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_256" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_256-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_268" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_268-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_272" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_272-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_277" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_277-image.jpg"/> 		
+	</record>
+
+	<record id="product_product_291" model="product.product">
+		<field name="image" type="base64" file="specibike/static/img/product/product_product_291-image.jpg"/> 		
+	</record>
+
+</data>
+</openerp>
