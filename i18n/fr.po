@@ -74,7 +74,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 8.0-a2115ef\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-07 10:14+0000\n"
-"PO-Revision-Date: 2014-12-07 13:20+0100\n"
+"PO-Revision-Date: 2015-01-05 21:09+0100\n"
 "Last-Translator: yann <yann@reseaucerta.fr>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -6040,7 +6040,7 @@ msgstr ""
 #. module: account
 #: view:website:account.report_generalledger
 msgid ": General ledger"
-msgstr ""
+msgstr " : Grand livre "
 
 #. module: account
 #: view:website:account.report_trialbalance
@@ -8654,7 +8654,7 @@ msgstr ""
 #: field:accounting.report,account_report_id:0
 #: model:ir.ui.menu,name:account.menu_account_financial_reports_tree
 msgid "Account Reports"
-msgstr ""
+msgstr "Etats"
 
 #. module: account
 #: view:account.financial.report:account.view_account_report_tree_hierarchy
@@ -10042,7 +10042,7 @@ msgstr ""
 #: code:addons/account/report/common_report_header.py:67
 #, python-format
 msgid "All Entries"
-msgstr ""
+msgstr "Toutes les écritures"
 
 #. module: mail
 #: selection:res.partner,notify_email:0
@@ -10055,7 +10055,7 @@ msgstr ""
 #: model:ir.ui.menu,name:stock.menu_action_picking_type_form
 #: view:stock.picking.type:stock.stock_picking_type_kanban
 msgid "All Operations"
-msgstr ""
+msgstr "Toutes les opérations"
 
 #. module: account
 #: selection:account.partner.balance,display_partner:0
@@ -10082,7 +10082,7 @@ msgstr ""
 #: code:addons/account/report/common_report_header.py:68
 #, python-format
 msgid "All Posted Entries"
-msgstr ""
+msgstr "Ecritures définitives"
 
 #. module: website_sale
 #: view:website:website_sale.products
@@ -12597,12 +12597,12 @@ msgstr ""
 #: view:stock.picking:stock.view_picking_internal_search
 #: view:stock.picking.type:stock.stock_picking_type_kanban
 msgid "Backorders"
-msgstr ""
+msgstr "Reliquats"
 
 #. module: stock
 #: view:stock.picking.type:stock.stock_picking_type_kanban
 msgid "Backorders (%)"
-msgstr ""
+msgstr "Reliquats (%)"
 
 #. module: web
 #. openerp-web
@@ -14060,13 +14060,13 @@ msgstr ""
 #. module: hr_expense
 #: field:product.template,hr_expense_ok:0
 msgid "Can be Expensed"
-msgstr ""
+msgstr "Peut être inséré dans une note de frais"
 
 #. module: purchase
 #: view:product.template:purchase.product_template_search_view_purchase
 #: field:product.template,purchase_ok:0
 msgid "Can be Purchased"
-msgstr ""
+msgstr "Peut être acheté"
 
 #. module: product
 #: field:product.template,rental:0
@@ -14077,7 +14077,7 @@ msgstr ""
 #: view:product.template:product.product_template_search_view
 #: field:product.template,sale_ok:0
 msgid "Can be Sold"
-msgstr ""
+msgstr "Peut être vendu"
 
 #. module: account
 #: field:account.chart.template,visible:0
@@ -15208,7 +15208,7 @@ msgstr ""
 #: field:account.vat.declaration,chart_account_id:0
 #: field:accounting.report,chart_account_id:0
 msgid "Chart of Account"
-msgstr ""
+msgstr "Plan comptable"
 
 #. module: account
 #: view:account.config.settings:account.view_account_config_settings
@@ -15216,7 +15216,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:account.action_account_tree
 #: model:ir.ui.menu,name:account.menu_action_account_tree2
 msgid "Chart of Accounts"
-msgstr ""
+msgstr "Plan comptable"
 
 #. module: account
 #: view:account.chart.template:account.view_account_chart_template_form
@@ -15243,7 +15243,7 @@ msgstr ""
 #: view:website:account.report_salepurchasejournal
 #: view:website:account.report_trialbalance
 msgid "Chart of Accounts:"
-msgstr ""
+msgstr "Plan comptable : "
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_analytic_account_tree2
@@ -19935,7 +19935,7 @@ msgstr ""
 #: view:stock.location:stock.view_location_search
 #, python-format
 msgid "Customer"
-msgstr ""
+msgstr "Client"
 
 #. modules: purchase, stock
 #: view:purchase.order:purchase.purchase_order_form
@@ -22199,12 +22199,12 @@ msgstr ""
 #: field:account.common.account.report,display_account:0
 #: field:account.report.general.ledger,display_account:0
 msgid "Display Accounts"
-msgstr ""
+msgstr "Afficher les comptes"
 
 #. module: account
 #: field:accounting.report,debit_credit:0
 msgid "Display Debit/Credit Columns"
-msgstr ""
+msgstr "Afficher les colonnes Débits/Crédits"
 
 #. module: account
 #: field:account.vat.declaration,display_detail:0
@@ -22919,7 +22919,7 @@ msgstr ""
 #: field:sale.receipt.report,date_due:0
 #, python-format
 msgid "Due Date"
-msgstr ""
+msgstr "Date d'échéance"
 
 #. module: account
 #: view:account.payment.term.line:account.view_payment_term_line_form
@@ -23783,7 +23783,7 @@ msgstr ""
 #. module: account
 #: field:accounting.report,enable_filter:0
 msgid "Enable Comparison"
-msgstr ""
+msgstr "Comparaison possible"
 
 #. module: sale_stock
 #: model:res.groups,name:sale_stock.group_invoice_deli_orders
@@ -25644,7 +25644,7 @@ msgstr ""
 #: view:website:account.report_partnerledgerother
 #: view:website:account.report_trialbalance
 msgid "Filter By:"
-msgstr ""
+msgstr "Filtré par : "
 
 #. module: base
 #: view:ir.filters:base.ir_filters_view_search
@@ -25688,7 +25688,7 @@ msgstr ""
 #: field:accounting.report,filter:0
 #: field:accounting.report,filter_cmp:0
 msgid "Filter by"
-msgstr ""
+msgstr "Filtré par"
 
 #. module: stock
 #. openerp-web
@@ -26003,7 +26003,7 @@ msgstr ""
 #: field:account.bilan.report,fiscalyear_id:0
 #: field:account.cdr.report,fiscalyear_id:0
 msgid "Fiscal Year"
-msgstr ""
+msgstr "Exercice"
 
 #. module: account
 #: view:ir.sequence:account.sequence_inherit_form
@@ -26039,7 +26039,7 @@ msgstr ""
 #: view:website:account.report_trialbalance
 #: view:website:account.report_vat
 msgid "Fiscal Year:"
-msgstr ""
+msgstr "Exercice :"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_fiscalyear
@@ -26198,14 +26198,14 @@ msgstr ""
 #: code:addons/mail/static/src/xml/mail_followers.xml:12
 #, python-format
 msgid "Follow"
-msgstr ""
+msgstr "Suivre"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:430
 #, python-format
 msgid "Follow Us..."
-msgstr ""
+msgstr "Nous suivre ..."
 
 #. module: sales_team
 #: view:crm.case.section:sales_team.crm_case_section_view_form
@@ -26247,7 +26247,7 @@ msgstr ""
 #: field:survey.survey,message_follower_ids:0
 #, python-format
 msgid "Followers"
-msgstr ""
+msgstr "Abonnés"
 
 #. module: mail
 #: view:mail.followers:mail.view_mail_subscription_form
@@ -26284,7 +26284,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/mail_followers.xml:14
 #, python-format
 msgid "Following"
-msgstr ""
+msgstr "Suivi"
 
 #. module: base
 #: code:addons/base/module/wizard/base_module_upgrade.py:99
@@ -30827,7 +30827,7 @@ msgstr ""
 #: field:product.template,default_code:0
 #: field:stock.production.lot,ref:0
 msgid "Internal Reference"
-msgstr ""
+msgstr "Référence interne"
 
 #. module: website
 #: view:website:website.500
@@ -30839,7 +30839,7 @@ msgstr ""
 #: model:stock.picking.type,name:stock.picking_type_internal
 #, python-format
 msgid "Internal Transfers"
-msgstr ""
+msgstr "Transferts internes"
 
 #. module: account
 #: field:account.journal,internal_account_id:0
@@ -31322,7 +31322,7 @@ msgstr ""
 #: view:sale.order:sale.view_order_form
 #, python-format
 msgid "Invoice"
-msgstr ""
+msgstr "Facture"
 
 #. module: sale
 #: field:sale.order,partner_invoice_id:0
@@ -31348,7 +31348,7 @@ msgstr ""
 #: field:sale.make.invoice,invoice_date:0
 #: field:stock.invoice.onshipping,invoice_date:0
 msgid "Invoice Date"
-msgstr ""
+msgstr "Date de la facture"
 
 #. module: account
 #: view:website:account.report_invoice_document
@@ -32153,7 +32153,7 @@ msgstr ""
 #. module: account
 #: selection:account.report.general.ledger,sortby:0
 msgid "Journal & Partner"
-msgstr ""
+msgstr "Journal puis partenaire"
 
 #. module: account
 #. openerp-web
@@ -32341,7 +32341,7 @@ msgstr ""
 #: view:website:account.report_journal
 #: view:website:account.report_salepurchasejournal
 msgid "Journal:"
-msgstr ""
+msgstr "Journal : "
 
 #. module: account
 #: field:account.aged.trial.balance,journal_ids:0
@@ -32369,7 +32369,7 @@ msgstr ""
 #: model:ir.ui.menu,name:account.menu_journals
 #: model:ir.ui.menu,name:account.menu_journals_report
 msgid "Journals"
-msgstr ""
+msgstr "Journaux"
 
 #. module: account
 #: view:website:account.report_centraljournal
@@ -32379,7 +32379,7 @@ msgstr ""
 #: view:website:account.report_partnerledger
 #: view:website:account.report_partnerledgerother
 msgid "Journals:"
-msgstr ""
+msgstr "Journaux : "
 
 #. module: account
 #: selection:report.account.sales,month:0
@@ -32594,7 +32594,7 @@ msgstr ""
 #. module: account
 #: field:account.report.general.ledger,landscape:0
 msgid "Landscape Mode"
-msgstr ""
+msgstr "Mode paysage"
 
 #. module: payment
 #: field:payment.transaction,partner_lang:0
@@ -33551,12 +33551,12 @@ msgstr ""
 #: view:stock.picking.type:stock.stock_picking_type_kanban
 #, python-format
 msgid "Late"
-msgstr ""
+msgstr "Retards"
 
 #. module: stock
 #: view:stock.picking.type:stock.stock_picking_type_kanban
 msgid "Late (%)"
-msgstr ""
+msgstr "Retards (%)"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_late
@@ -38082,7 +38082,7 @@ msgstr ""
 #: selection:accounting.report,filter:0
 #: selection:accounting.report,filter_cmp:0
 msgid "No Filters"
-msgstr ""
+msgstr "Sans filtre"
 
 #. module: account
 #: view:account.config.settings:account.view_account_config_settings
@@ -38779,7 +38779,7 @@ msgstr ""
 #: field:account.voucher,number:0
 #: selection:survey.user_input_line,answer_type:0
 msgid "Number"
-msgstr ""
+msgstr "Numéro"
 
 #. module: account
 #: view:account.move.line:account.view_account_move_line_filter
@@ -42359,7 +42359,7 @@ msgstr ""
 #: model:ir.ui.menu,name:account.menu_action_account_period
 #: model:ir.ui.menu,name:account.next_id_23
 msgid "Periods"
-msgstr ""
+msgstr "Périodes"
 
 #. module: account
 #: view:website:account.report_vat
@@ -46145,7 +46145,7 @@ msgstr ""
 #: model:stock.picking.type,name:stock.picking_type_in
 #, python-format
 msgid "Receipts"
-msgstr ""
+msgstr "Réceptions"
 
 #. module: account
 #: selection:account.account,type:0
@@ -51940,12 +51940,12 @@ msgstr ""
 #. module: account
 #: field:account.report.general.ledger,sortby:0
 msgid "Sort by"
-msgstr ""
+msgstr "Trié par"
 
 #. module: account
 #: view:website:account.report_generalledger
 msgid "Sorted By:"
-msgstr ""
+msgstr "Trié par : "
 
 #. module: l10n_fr_hr_payroll
 #: view:website:l10n_fr_hr_payroll.report_l10nfrfichepaye
@@ -51986,7 +51986,7 @@ msgstr ""
 #: field:sale.order,origin:0
 #: field:stock.picking,origin:0
 msgid "Source Document"
-msgstr ""
+msgstr "Document source"
 
 #. module: stock
 #: field:procurement.rule,location_src_id:0
@@ -54184,7 +54184,7 @@ msgstr ""
 #: field:account.vat.declaration,target_move:0
 #: field:accounting.report,target_move:0
 msgid "Target Moves"
-msgstr ""
+msgstr "Mouvements cibles"
 
 #. module: account
 #: view:website:account.report_agedpartnerbalance
@@ -54199,7 +54199,7 @@ msgstr ""
 #: view:website:account.report_salepurchasejournal
 #: view:website:account.report_trialbalance
 msgid "Target Moves:"
-msgstr ""
+msgstr "Mouvements cibles :"
 
 #. module: base
 #: field:ir.actions.act_window,target:0
@@ -59171,7 +59171,7 @@ msgstr ""
 #: view:mail.group:mail.view_group_kanban
 #, python-format
 msgid "Unfollow"
-msgstr ""
+msgstr "Ne plus suivre"
 
 #. module: mail
 #: sql_constraint:mail.alias:0
@@ -62307,7 +62307,7 @@ msgstr ""
 #: field:account.print.journal,amount_currency:0
 #: field:account.report.general.ledger,amount_currency:0
 msgid "With Currency"
-msgstr ""
+msgstr "Avec devise"
 
 #. module: website
 #: view:website:website.snippets
@@ -62339,7 +62339,7 @@ msgstr ""
 #: view:website:account.report_generalledger
 #: view:website:account.report_trialbalance
 msgid "With movements"
-msgstr ""
+msgstr "Avec mouvements"
 
 #. module: account
 #: view:account.statement.operation.template:account.view_account_statement_operation_template_search
