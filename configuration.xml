@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp> 
-  <data noupdate="1">
+  <data noupdate="0">
 	<!--      charger automatiquement le français  -->      
        
 	<record model="base.language.install" id="install_fr">
@@ -83,65 +83,65 @@
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="1"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_1">
-		<field name="name">fiscalyear_1_period_1</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_01">
+		<field name="name">fiscalyear_1_period_01</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="2"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_2">
-		<field name="name">fiscalyear_1_period_2</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_02">
+		<field name="name">fiscalyear_1_period_02</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="3"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_3">
-		<field name="name">fiscalyear_1_period_3</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_03">
+		<field name="name">fiscalyear_1_period_03</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="4"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_4">
-		<field name="name">fiscalyear_1_period_4</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_04">
+		<field name="name">fiscalyear_1_period_04</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="5"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_5">
-		<field name="name">fiscalyear_1_period_5</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_05">
+		<field name="name">fiscalyear_1_period_05</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="6"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_6">
-		<field name="name">fiscalyear_1_period_6</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_06">
+		<field name="name">fiscalyear_1_period_06</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="7"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_7">
-		<field name="name">fiscalyear_1_period_7</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_07">
+		<field name="name">fiscalyear_1_period_07</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="8"/>
         </record>
-	<record model="ir.model.data" id="fiscalyear_1_period_8">
-		<field name="name">fiscalyear_1_period_8</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_08">
+		<field name="name">fiscalyear_1_period_08</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>
 		<field name="res_id" model="account.period" eval="9"/>
         </record>
 
-	<record model="ir.model.data" id="fiscalyear_1_period_9">
-		<field name="name">fiscalyear_1_period_9</field>
+	<record model="ir.model.data" id="fiscalyear_1_period_09">
+		<field name="name">fiscalyear_1_period_09</field>
 		<field name="noupdate">TRUE</field>
 		<field name="module">account</field>
 		<field name="model">account.period</field>

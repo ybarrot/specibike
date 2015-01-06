@@ -47,12 +47,13 @@ Il permet de travailler sur :
 				 
 	""",
 	'author': "Réseau Certa",
-	'website': "http://http://www.reseaucerta.org/",
+	'website': "http://www.reseaucerta.org/",
 
 	# any module necessary for this one to work correctly
 	'depends': [
 		'base',
 		'mail',
+		'contacts',
 		'l10n_fr',
 		'account_accountant',
 		'stock',
