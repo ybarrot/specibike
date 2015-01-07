@@ -81,8 +81,9 @@ Il permet de travailler sur :
 		'hr.employee.category.csv',
 		'res.partner.csv',
 		'res.users.csv',
-		'res_partner_img.xml',
+		'res_partner_img.xml',		
 		'hr.employee.csv',
+		'hr_employee.xml',		
 		'2round/hr.department.csv',		
 		'crm.case.section.csv',		
 		'product.category.csv',
@@ -103,6 +104,8 @@ Il permet de travailler sur :
 		#site web
 		'website.xml',
 		'website_product.xml',
+		#contrats
+		'hr_contract.xml',
 						
 	],
 	# only loaded in demonstration mode

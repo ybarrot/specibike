@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+	<!--photo employés :  2to11 -->
+	
+	<record id="hr_employee_2" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_4-image.png"/>
+        </record>
+	<record id="hr_employee_3" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_6-image.png"/>
+        </record>
+	<record id="hr_employee_4" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_3-image.png"/>
+        </record>     
+   	<record id="hr_employee_5" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_5-image.png"/>
+        </record> 
+   	<record id="hr_employee_6" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_7-image.png"/>
+        </record> 
+   	<record id="hr_employee_7" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_9-image.png"/>
+        </record>  
+   	<record id="hr_employee_8" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_8-image.png"/>
+        </record>      
+   	<record id="hr_employee_9" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_10-image.png"/>
+        </record>
+   	<record id="hr_employee_10" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_12-image.png"/>
+        </record> 
+   	<record id="hr_employee_11" model="hr.employee">
+            <field name="image" type="base64" file="specibike/static/img/partner/res_partner_11-image.png"/>
+        </record>  
+  </data>
+</openerp>

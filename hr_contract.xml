@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+	<!--contrats & bulletins 2to11 -->	
+	<record id="hr_employee_contract_2" model="hr.contract">
+		<field name="name">c002</field>
+		<field name="employee_id" ref="hr_employee_2" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">15000</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>
+	<!--bulletin-->
+	<record id="hr_employee_2_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_2" />
+		<field name="name" eval="'Bulletin de paie de Burgond '+time.strftime('%m-%Y')"/>		
+	</record>
+	<!--confirmation & validation -->
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_2_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_2_payslip_1')]"/>		
+	</function>
+
+	<!-- -->
+	<record id="hr_employee_contract_3" model="hr.contract">
+		<field name="name">c003</field>
+		<field name="employee_id" ref="hr_employee_3" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">3500</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_3_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_3" />
+		<field name="name" eval="'Bulletin de paie de Khatib '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_3_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_3_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_4" model="hr.contract">
+		<field name="name">c004</field>
+		<field name="employee_id" ref="hr_employee_4" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">4000</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_4_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_4" />
+		<field name="name" eval="'Bulletin de paie de Billon '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_4_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_4_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_5" model="hr.contract">
+		<field name="name">c005</field>
+		<field name="employee_id" ref="hr_employee_5" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">1800</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_5_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_5" />
+		<field name="name" eval="'Bulletin de paie de Fulton '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_5_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_5_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_6" model="hr.contract">
+		<field name="name">c006</field>
+		<field name="employee_id" ref="hr_employee_6" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">1500</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_6_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_6" />
+		<field name="name" eval="'Bulletin de paie de Coulmy '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_6_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_6_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_7" model="hr.contract">
+		<field name="name">c007</field>
+		<field name="employee_id" ref="hr_employee_7" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">4000</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_7_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_7" />
+		<field name="name" eval="'Bulletin de paie de Rivaux '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_7_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_7_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_8" model="hr.contract">
+		<field name="name">c008</field>
+		<field name="employee_id" ref="hr_employee_8" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">3500</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_8_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_8" />
+		<field name="name" eval="'Bulletin de paie de Metz '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_8_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_8_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_9" model="hr.contract">
+		<field name="name">c009</field>
+		<field name="employee_id" ref="hr_employee_9" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">2000</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_9_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_9" />
+		<field name="name" eval="'Bulletin de paie de Gross '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_9_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_9_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_10" model="hr.contract">
+		<field name="name">c010</field>
+		<field name="employee_id" ref="hr_employee_10" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">3000</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-10)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_10_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_10" />
+		<field name="name" eval="'Bulletin de paie de Schindler '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_10_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_10_payslip_1')]"/>		
+	</function>
+	<!-- -->
+	<record id="hr_employee_contract_11" model="hr.contract">
+		<field name="name">c011</field>
+		<field name="employee_id" ref="hr_employee_11" />
+		<field name="type_id" ref="hr_contract.hr_contract_type_emp"/>
+		<field name="wage">3000</field>
+		<field name="struct_id" ref="l10n_fr_hr_payroll.hr_payroll_salary_structure_employe_cadre"/>
+		<field name="date_start" eval="str(int(time.strftime('%Y'))-11)+'-01-01'" />		
+	</record>	
+	<record id="hr_employee_11_payslip_1" model="hr.payslip">
+		<field name="employee_id" ref="hr_employee_11" />
+		<field name="name" eval="'Bulletin de paie de Albrecht '+time.strftime('%m-%Y')"/>		
+	</record>	
+	<function model="hr.payslip" name="hr_verify_sheet">
+		<value eval="[ref('hr_employee_11_payslip_1')]"/>		
+	</function>
+	<function model="hr.payslip" name="process_sheet">
+		<value eval="[ref('hr_employee_11_payslip_1')]"/>		
+	</function>
+
+ </data>
+</openerp>
