@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp> 
-  <data noupdate="0">
+  <data noupdate="1">
 	<!--      charger automatiquement le français  -->      
        
 	<record model="base.language.install" id="install_fr">
@@ -206,6 +206,7 @@
 		<field name="image" type="base64" file="specibike/static/img/partner/logo2.png"/>
         </record>
 
+	
 	<!-- paramètres des sites-->
 	<!-- Activer le support du français-->
 	<record model="website.config.settings" id="set_website_languages">	
@@ -222,7 +223,19 @@
            	<value eval="[[ref('set_website_default_language')]]"/>            
         </function>	
 
+
+
+
+
+        <!--notification pour les pistes nouvelles par defaut-->	
+	<record id="crm.mt_salesteam_lead" model="mail.message.subtype">            
+            <field name="default" eval="True"/>
+
+        </record>
+
   </data>
+
+
 
 	
 </openerp>

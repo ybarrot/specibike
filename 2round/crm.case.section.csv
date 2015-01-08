@@ -1,0 +1,4 @@
+"id","alias_contact","alias_model_id/id","name","code","alias_defaults","member_ids/id","message_follower_ids/id","use_quotations","invoiced_forecast","invoiced_target"
+"sales_team.section_sales_department","everyone","crm.model_crm_lead","Equipe Vente Dijon","EVD","{'type': 'lead', 'section_id': 3}","base.user_root,res_users_3,res_users_5","base.partner_root,res_partner_3,res_partner_5","True",50000,60000
+"sales_team.section_sales_department_paris","everyone","crm.model_crm_lead","Equipe Vente Paris","EVP","{}","base.user_root,res_users_3,res_users_4","base.partner_root,res_partner_3,res_partner_4","True",30000,35000
+"website.salesteam_website_sales","everyone","crm.model_crm_lead","Equipe Vente Web","EVWeb","{}","base.user_root,res_users_3,res_users_5","base.partner_root,res_partner_3,res_partner_5","True",30000,35000
