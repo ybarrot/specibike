@@ -29,7 +29,7 @@ Module de donnees pour Specibike
 
 Ce module peut être installé sans aucun autre module préalable. Il appelle les modules nécessaires.
 
-Il comprend :
+Il comprend en particulier :
 --------------------------------------------
   * les données de base : utilisateurs, employés					
   * les produits, catégories ...
